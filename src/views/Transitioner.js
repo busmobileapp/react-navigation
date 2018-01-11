@@ -162,10 +162,12 @@ class Transitioner extends React.Component<Props, State> {
             timing(progress, {
               ...transitionSpec,
               toValue: 1,
+              useNativeDriver: true
             }),
             timing(position, {
               ...transitionSpec,
               toValue: nextProps.navigation.state.index,
+              useNativeDriver: true
             }),
           ]
         : [];
